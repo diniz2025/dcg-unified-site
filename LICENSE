@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 nadjair diniz barbosa
+Copyright (c) 2026 DCG Corretora de Seguros LTDA · Diniz (Nadjair Diniz Barbosa)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Additional notice (DCG compliance):
+
+This repository contains public interface code only. Credentials, customer
+data, regulatory body specifics and operational tooling are intentionally
+OMITTED from version control. Any contributor committing production
+credentials, customer identifiable information (PII), or fake regulator
+references will be reverted immediately and the commit history scrubbed.
+
+Operadoras e seguradoras mencionadas neste repositório são nomes públicos
+de domínio (LGPD-seguro). Nenhuma apólice, proposta ou situação contratual
+real está exposta aqui.
