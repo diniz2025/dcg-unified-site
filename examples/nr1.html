@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NR-1 + IVI — Riscos psicossociais que a sua empresa já tem</title>
+  <meta name="description" content="Plataforma IVI x DCG: telepsicologia 24h, IA de saúde mental, workshops trimestrais, integra com PGR/GRO. Membros FHORESP 15% off. Cumpre MTE 1.419/2024 NR-1 cap 1.5." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy:#0A1F44; --navy-700:#152D5C; --pearl:#F8F7F4; --pearl-200:#EDEBE2; --gold:#C8A85D; --gold-300:#D9BC75; --gold-700:#9A7E3F; --slate:#5A6B82; --slate-300:#8B97AC; --coral:#E2725B; --forest:#2D5F4B; --ivory:#FFFFFF; --motion:cubic-bezier(0.4,0,0.2,1); }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;color:var(--navy);background:var(--pearl);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-0.014em}
+    .mono{font-family:'JetBrains Mono',monospace}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;cursor:pointer;border:none;background:none}
+    header{background:var(--ivory);border-bottom:1px solid var(--pearl-200);padding:14px 24px;position:sticky;top:0;z-index:90;backdrop-filter:saturate(180%) blur(20px);background:rgba(255,255,255,0.92)}
+    .head-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:32px}
+    .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:1.25rem;color:var(--navy)}
+    .brand-mark{width:30px;height:30px;border-radius:8px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-size:0.875rem;font-weight:700}
+    nav.primary{display:flex;gap:28px;margin-left:12px}
+    nav.primary a{color:var(--slate);font-size:0.9375rem}
+    nav.primary a.active{color:var(--gold-700);font-weight:600}
+    .head-right{margin-left:auto;display:flex;gap:12px;align-items:center}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:6px;font-weight:500;font-size:0.9375rem;transition:all 200ms var(--motion)}
+    .btn-primary{background:var(--navy);color:var(--ivory)}
+    .btn-primary:hover{background:var(--navy-700);transform:translateY(-1px)}
+    .btn-gold{background:var(--gold);color:var(--navy)}
+    .btn-gold:hover{background:var(--gold-300);transform:translateY(-1px)}
+    .btn-ghost{color:var(--navy);padding:10px 12px}
+    .hero{padding:80px 24px 96px;background:linear-gradient(140deg,var(--navy) 0%,var(--forest) 75%);color:var(--pearl);position:relative;overflow:hidden}
+    .hero::after{content:'';position:absolute;top:0;right:0;width:520px;height:520px;background:radial-gradient(circle,rgba(200,168,93,0.18),transparent 60%);pointer-events:none}
+    .hero-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
+    .hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.8125rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:inline-flex;gap:8px;align-items:center}
+    .hero-eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+    .hero h1{font-size:clamp(2.25rem,4.8vw,4.25rem);line-height:1.08;margin-bottom:24px;letter-spacing:-0.02em}
+    .hero h1 em{font-style:italic;color:var(--gold);font-weight:500}
+    .hero-lead{font-size:1.0625rem;line-height:1.55;color:var(--slate-300);max-width:540px;margin-bottom:24px}
+    .alert-card{padding:20px 24px;background:rgba(0,0,0,0.2);border:1px solid rgba(200,168,93,0.4);border-radius:12px;margin-bottom:24px;max-width:540px}
+    .alert-card .badge{font-family:'JetBrains Mono',monospace;font-size:0.6875rem;letter-spacing:0.14em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
+    .alert-card h4{font-size:1.0625rem;font-weight:500;margin-bottom:6px;color:var(--ivory)}
+    .alert-card p{font-size:0.875rem;color:var(--slate-300);line-height:1.5}
+    .alert-card strong{color:var(--ivory)}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-cta .btn-primary{background:var(--gold);color:var(--navy)}
+    .hero-cta .btn-primary:hover{background:var(--gold-300)}
+    .hero-side{padding:32px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,93,0.25);border-radius:16px}
+    .hero-side h3{font-size:0.875rem;font-family:'JetBrains Mono',monospace;letter-spacing:0.14em;color:var(--gold);text-transform:uppercase;margin-bottom:20px}
+    .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px 0;border-bottom:1px solid rgba(200,168,93,0.15)}
+    .stat-row:first-child{padding-top:0}
+    .stat-row:last-child{border-bottom:0;padding-bottom:0}
+    .stat-num{font-family:'Fraunces',serif;font-size:1.75rem;font-weight:500;color:var(--ivory)}
+    .stat-label{font-size:0.8125rem;color:var(--slate-300);margin-top:4px}
+    .sect{padding:96px 24px}
+    .sect.dark{background:var(--navy);color:var(--pearl)}
+    .sect-head{max-width:1280px;margin:0 auto 56px}
+    .sect-head .eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.75rem;letter-spacing:0.16em;color:var(--gold-700);text-transform:uppercase;margin-bottom:16px}
+    .sect.dark .sect-head .eyebrow{color:var(--gold)}
+    .sect-head h2{font-size:clamp(2rem,3.5vw,2.875rem);line-height:1.15;font-weight:400;max-width:780px}
+    .sect-head h2 em{font-style:italic;color:var(--gold-700)}
+    .sect.dark .sect-head h2 em{color:var(--gold)}
+    .grid3{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .card{padding:28px 32px;background:var(--ivory);border:1px solid var(--pearl-200);border-radius:14px;transition:all 300ms var(--motion)}
+    .card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(10,31,68,0.1)}
+    .sect.dark .card{background:rgba(255,255,255,0.04);border-color:rgba(200,168,93,0.2);color:var(--pearl)}
+    .card .tag{font-family:'JetBrains Mono',monospace;font-size:0.6875rem;letter-spacing:0.14em;color:var(--gold-700);text-transform:uppercase;margin-bottom:12px}
+    .sect.dark .card .tag{color:var(--gold)}
+    .card h3{font-size:1.1875rem;font-weight:500;margin-bottom:12px}
+    .card p{font-size:0.9375rem;color:var(--slate);line-height:1.55}
+    .sect.dark .card p{color:var(--slate-300)}
+    .reg-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .reg-cell{padding:24px;background:rgba(255,255,255,0.03);border:1px solid rgba(200,168,93,0.15);border-radius:12px}
+    .reg-cell .ref{font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--gold);margin-bottom:8px}
+    .reg-cell h4{font-size:1rem;font-weight:500;margin-bottom:6px}
+    .reg-cell .state{font-size:0.8125rem;color:var(--slate-300);line-height:1.5;margin-bottom:12px}
+    .reg-cell .state.on{color:#4ADE80}
+    .reg-cell .state.caut{color:var(--coral)}
+    .cta-final{padding:80px 24px;background:var(--pearl);text-align:center}
+    .cta-final-inner{max-width:760px;margin:0 auto}
+    .cta-final h2{font-size:clamp(1.875rem,3vw,2.5rem);margin-bottom:20px;line-height:1.2}
+    .cta-final h2 em{font-style:italic;color:var(--gold-700)}
+    .cta-final p{font-size:1.0625rem;color:var(--slate);margin-bottom:28px;max-width:560px;margin-left:auto;margin-right:auto}
+    .cta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    footer{background:var(--navy);color:var(--pearl);padding:48px 24px 24px}
+    .foot-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
+    .foot-brand h4{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:600;margin-bottom:8px}
+    .foot-brand p{color:var(--slate-300);font-size:0.875rem;max-width:320px}
+    .foot-col h5{font-family:'JetBrains Mono',monospace;font-size:0.6875rem;letter-spacing:0.16em;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
+    .foot-col ul{list-style:none}
+    .foot-col li{margin-bottom:8px}
+    .foot-col a{color:var(--slate-300);font-size:0.875rem}
+    .tim-bubble{position:fixed;bottom:24px;right:24px;width:64px;height:64px;border-radius:50%;background:var(--navy);color:var(--ivory);border:2px solid var(--gold);display:grid;place-items:center;font-family:'Fraunces',serif;font-size:1.5rem;cursor:pointer;z-index:200;box-shadow:0 10px 40px rgba(10,31,68,0.3);transition:all 250ms var(--motion)}
+    .tim-bubble:hover{transform:scale(1.05);background:var(--gold);color:var(--navy)}
+    @media (max-width:980px){.hero-inner{grid-template-columns:1fr;gap:40px}.grid3,.reg-grid{grid-template-columns:1fr}.foot-inner{grid-template-columns:1fr 1fr}nav.primary{display:none}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="head-inner">
+    <a href="/" class="brand"><span class="brand-mark">D</span> DCG Corretora</a>
+    <nav class="primary">
+      <a href="/empresas">Empresas</a>
+      <a href="/corretores">Corretores</a>
+      <a href="/data">Data</a>
+      <a href="/sinhores">SinHoRes</a>
+      <a href="/nr1" class="active">NR-1 + IVI</a>
+    </nav>
+    <div class="head-right">
+      <button onclick="openTim()" class="btn btn-primary"><span style="font-family:Fraunces,serif">T</span> Falar com Tim</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">NR-1 + IVI · trilha regulatória co-brand</div>
+      <h1>A sua empresa <em>já tem</em> riscos psicossociais — <br>mesmo que você não mapeie.</h1>
+      <p class="hero-lead">Plataforma DCG × IVI: telepsicologia 24h, IA de saúde mental, workshops trimestrais, integração nativa com PGR e GRO. Cumpre NR-1 cap 1.5 vigência 26/05/2026 — e opera sob cautelar STF ADPF 1316 sem perder qualidade de gestão.</p>
+      <div class="alert-card">
+        <div class="badge">LINHA DO TEMPO NORMATIVO</div>
+        <h4>Três coisas que estão vigendo agora</h4>
+        <p><strong>MTE 1.419/2024</strong> · NR-1 cap 1.5 psicossocial (vigência 26/05/2026). <strong>STF ADPF 1316</strong> · cautelar 90 dias sobre multas (25/06/2026). <strong>MTE Fiscalização</strong> · auditoria direta em ramos com afastamento alto (foodservice, constructions, telemarketing).</p>
+      </div>
+      <div class="hero-cta">
+        <a href="/diagnostico-nr1" class="btn btn-primary">Diagnosticar exposição da empresa →</a>
+        <button onclick="openTim()" class="btn btn-ghost" style="color:var(--pearl);border:1px solid rgba(200,168,93,0.35)">Falar com Tim</button>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <h3>Painel NR-1 × IVI</h3>
+      <div class="stat-row"><div><div class="stat-num">26/05</div><div class="stat-label">vigência NR-1<br>cap 1.5 psicossocial</div></div><div><div class="stat-num">90d</div><div class="stat-label">cautelar STF<br>ADPF 1316</div></div></div>
+      <div class="stat-row"><div><div class="stat-num">24h</div><div class="stat-label">telepsicologia<br>inclusa IVI</div></div><div><div class="stat-num">8h</div><div class="stat-label">resposta IA<br>caso grave</div></div></div>
+      <div class="stat-row"><div><div class="stat-num">15%</div><div class="stat-label">off FHORESP<br>membros S.H.O.</div></div><div><div class="stat-num">1</div><div class="stat-label">RIPD incluso<br>no setup</div></div></div>
+    </aside>
+  </div>
+</section>
+
+<section class="sect">
+  <div class="sect-head">
+    <div class="eyebrow">O que está dentro do programa</div>
+    <h2>Quatro entregas que <em>fazem a diferença na auditoria</em> — e na saúde do time.</h2>
+  </div>
+  <div class="grid3">
+    <article class="card">
+      <div class="tag">Plataforma digital</div>
+      <h3>HSE-IT IVI</h3>
+      <p>Plataforma online de avaliação psicossocial contínua. Funcionários autoavaliam por escala validada IVI a cada 60 dias. Resultado alimenta ranking de risco por setor/equipe — totalmente LGPD Art. 7º compatible.</p>
+    </article>
+    <article class="card">
+      <div class="tag">Saúde mental 24h</div>
+      <h3>Telepsicologia ilimitada</h3>
+      <p>Acesso direto para todos os colaboradores via aplicativo IVI. Sessão por chamada de vídeo, chat seguro ou voz. Resposta em até 8h para casos triados como graves (burnout agudo, ideação, luto).</p>
+    </article>
+    <article class="card">
+      <div class="tag">IA aplicada</div>
+      <h3>Tim IA integrado</h3>
+      <p>Tim agrega dados do HSE-IT, prontuários IVI (anonimizados em dashboards) e indicadores do eSocial 22. Detecta sinais precoces e dispara rotinas automáticas de cuidado.</p>
+    </article>
+    <article class="card">
+      <div class="tag">Workshops presenciais</div>
+      <h3>Trimestral no escritório</h3>
+      <p>4 oficinas anuais com psicólogos IVI in loco: lidar com luto, violência doméstica, burnout, retorno pós-afastamento. Compliance total — não substitui tratamento individual.</p>
+    </article>
+    <article class="card">
+      <div class="tag">Documentação legal</div>
+      <h3>PGR/GRO integrado</h3>
+      <p>Plataforma DCG gera capítulo psicossocial do PGR/GRO automaticamente. Atualização anual incluída. RIPD incluso no setup. Pronto para fiscalização MTE 24h antes da visita.</p>
+    </article>
+    <article class="card">
+      <div class="tag">Custo concentrado</div>
+      <h3>Menos afastamento, mais lucro</h3>
+      <p>Em estudo de caso DCG × cliente food-service 2025, redução de 38% em afastamentos CID-F32-F33 em 6 meses. Outro cliente (varejo 280 vidas) reduziu FAP em 0,3pp via gestão ativa.</p>
+    </article>
+  </div>
+</section>
+
+<section class="sect dark">
+  <div class="sect-head">
+    <div class="eyebrow">Linha do tempo regulatória 2026</div>
+    <h2>Conformidade que <em>não espera</em> — mas sabe onde pisar.</h2>
+  </div>
+  <div class="reg-grid">
+    <div class="reg-cell">
+      <div class="ref">MTE 1.419/2024 · NR-1 cap 1.5</div>
+      <h4>Psicossociais no PGR</h4>
+      <div class="state on">VIGENTE · 26/05/2026</div>
+      <p>Fatores de risco psicossociais agora integram GRO/PGR obrigatório. Empresas com +1 funcionário no retail + foodservice são as mais fiscalizadas.</p>
+    </div>
+    <div class="reg-cell">
+      <div class="ref">STF ADPF 1316</div>
+      <h4>Cautelar 90 dias</h4>
+      <div class="state caut">CAUTELAR · desde 25/06/2026</div>
+      <p>STF suspendeu temporariamente aplicação de multas sobre dispositivos psicossociais. NR-1 segue vigente — gestão continua obrigatória.</p>
+    </div>
+    <div class="reg-cell">
+      <div class="ref">MTE Fiscalização ativa</div>
+      <h4>Auditoria setorial 2026</h4>
+      <div class="state on">EM CURSO</div>
+      <p>Auditores MTE miram ramos com afastamento alto. Foodservice, construção, telemarketing. Empresas Sem NR-1 cap 1.5 respondem administrativo.</p>
+    </div>
+    <div class="reg-cell">
+      <div class="ref">ANPD · LGPD</div>
+      <h4>Tratamento sensível (saúde)</h4>
+      <div class="state on">OBRIGATÓRIO</div>
+      <p>Dados de saúde mental são sensíveis (LGPD Art. 11). RIPD é obrigatório. DCG inclui base legal + retenção + DPO no setup.</p>
+    </div>
+    <div class="reg-cell">
+      <div class="ref">CCT 23-25 · eixo psicossocial</div>
+      <h4>SinHoRes Osasco + FHORESP</h4>
+      <div class="state on">VIGENTE</div>
+      <p>Convenções dos ramos hoteleiro e de alimentação incluem cláusulas sobre NR-1. Membros FHORESP têm 15% off DCG × IVI pelo corredor institucional.</p>
+    </div>
+    <div class="reg-cell">
+      <div class="ref">NTEP · FAP</div>
+      <h4>Acidentes e doenças ocupacionais</h4>
+      <div class="state on">VIGENTE</div>
+      <p>Gestão psicossocial ativa reduz NTEP em CID F. CNAE 56 (alimentação) é um dos mais afetados.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="cta-final-inner">
+    <h2>Traga o seu PGR para a <em>próxima auditoria</em> sem abrir o FHORESP.</h2>
+    <p>Diagnóstico NR-1 gratuito de 60s. Programado em até 14 dias. Membros FHORESP 15% off; associados SinHoRes Osasco Alphaville têm corredor institucional dedicado.</p>
+    <div class="cta-actions">
+      <a href="/diagnostico-nr1" class="btn btn-primary">Iniciar diagnóstico NR-1 →</a>
+      <button onclick="openTim()" class="btn btn-gold">Falar com Tim</button>
+      <a href="https://wa.me/5511930759163" class="btn btn-ghost">WhatsApp</a>
+    </div>
+    <p style="margin-top:32px;font-size:0.8125rem;color:var(--slate-300);font-family:'JetBrains Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;">Operado por IVI (Instituto Vida Inteligente) · Divulgado por DCG · LGPD end-to-end</p>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <h4>DCG × IVI · NR-1 trilha regulatória</h4>
+      <p>Plataforma DCG Corretora · CNPJ 16.383.565/0001-35 · em parceria operacional com IVI Instituto Vida Inteligente. Programa distribuído pela DCG, executado por IVI.</p>
+    </div>
+    <div class="foot-col">
+      <h5>Programa</h5>
+      <ul>
+        <li><a href="/diagnostico-nr1">Diagnóstico NR-1</a></li>
+        <li><a href="/nr1-sinhores">Membros FHORESP</a></li>
+        <li><a href="/ivi">O Instituto IVI</a></li>
+        <li><a href="/hse-it">HSE-IT</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>DCG stack</h5>
+      <ul>
+        <li><a href="/empresas">Empresas</a></li>
+        <li><a href="/corretores">Corretores Pro</a></li>
+        <li><a href="/data">Data Intelligence</a></li>
+        <li><a href="/sinhores">SinHoRes</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>Compliance</h5>
+      <ul>
+        <li><a href="/lgpd">LGPD</a></li>
+        <li><a href="/seguranca">Segurança</a></li>
+        <li><a href="/termos">Termos</a></li>
+        <li><a href="/privacidade">Privacidade</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<button class="tim-bubble" onclick="openTim()" aria-label="Falar com Tim">T</button>
+<script>function openTim(){window.alert("Tim — NR-1 trilha\\n\\nConte: 'NR-1', [porte da empresa], [ramo]. Tim abre o programa IVI com cotação.");}</script>
+</body>
+</html>
