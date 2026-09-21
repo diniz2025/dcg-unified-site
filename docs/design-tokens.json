@@ -1,0 +1,87 @@
+# Design Tokens DCG Unificada
+
+Lovable-friendly JSON. Copie em `tailwind.config.ts` ou aplique CSS vars.
+
+```json
+{
+  "colors": {
+    "navy": "#0A1F44",
+    "navy-700": "#152D5C",
+    "navy-500": "#2D4A7A",
+    "pearl": "#F8F7F4",
+    "pearl-200": "#EDEBE2",
+    "gold": "#C8A85D",
+    "gold-300": "#D9BC75",
+    "gold-700": "#9A7E3F",
+    "slate": "#5A6B82",
+    "slate-300": "#8B97AC",
+    "coral": "#E2725B",
+    "coral-light": "#F4A48F",
+    "forest": "#2D5F4B",
+    "ivory": "#FFFFFF"
+  },
+  "fonts": {
+    "display": ["'Fraunces'", "serif"],
+    "body": ["'Inter'", "sans-serif"],
+    "mono": ["'JetBrains Mono'", "monospace"]
+  },
+  "fontSize": {
+    "display-xl": ["5.5rem", { "lineHeight": "1.05", "letterSpacing": "-0.02em" }],
+    "display-lg": ["4rem", { "lineHeight": "1.08", "letterSpacing": "-0.018em" }],
+    "display-md": ["3rem", { "lineHeight": "1.12", "letterSpacing": "-0.014em" }],
+    "display-sm": ["2.25rem", { "lineHeight": "1.18", "letterSpacing": "-0.01em" }],
+    "body-lg": ["1.125rem", { "lineHeight": "1.65" }],
+    "body": ["1rem", { "lineHeight": "1.65" }],
+    "body-sm": ["0.875rem", { "lineHeight": "1.55" }],
+    "caption": ["0.75rem", { "lineHeight": "1.4", "letterSpacing": "0.04em" }]
+  },
+  "spacing": {
+    "container": "1280px",
+    "gutter": "24px"
+  },
+  "radius": {
+    "none": "0px",
+    "sm": "4px",
+    "md": "8px",
+    "lg": "16px",
+    "xl": "24px",
+    "pill": "9999px"
+  },
+  "shadow": {
+    "soft": "0 2px 12px rgba(10,31,68,0.06)",
+    "medium": "0 8px 32px rgba(10,31,68,0.1)",
+    "deep": "0 20px 60px rgba(10,31,68,0.18)"
+  },
+  "motion": {
+    "quick": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+    "normal": "250ms cubic-bezier(0.4, 0, 0.2, 1)",
+    "slow": "450ms cubic-bezier(0.4, 0, 0.2, 1)",
+    "ease": "cubic-bezier(0.4, 0, 0.2, 1)"
+  }
+}
+```
+
+## Tailwind equivalente
+
+```ts
+// tailwind.config.ts
+{
+  theme: {
+    extend: {
+      colors: {
+        navy: { 500: '#0A1F44', 700: '#152D5C', 500: ... },
+        pearl: { DEFAULT: '#F8F7F4', 200: '#EDEBE2' },
+        gold: { DEFAULT: '#C8A85D', 300: '#D9BC75', 700: '#9A7E3F' },
+        slate: { DEFAULT: '#5A6B82', 300: '#8B97AC' },
+        coral: { DEFAULT: '#E2725B', light: '#F4A48F' },
+        forest: '#2D5F4B'
+      },
+      fontFamily: {
+        display: ['Fraunces', 'serif'],
+        body: ['Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace']
+      }
+    }
+  }
+}
+```
